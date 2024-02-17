@@ -1,0 +1,1236 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-switcher {
+    height: 750px;
+    width: 90vwvw;
+    background-image: url(images/DQ1title.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 16px;    
+    background-color: #ffffff;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+}
+
+nav ul {
+    display: flex;
+    padding: 15px 0px;
+}
+
+.h1{
+    display: block;
+    font-weight: bold;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav a {
+    color: #000;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Dela Gothic One', sans-serif;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover{
+    text-shadow: 3px 3px 20px #30A2FF;
+}
+
+nav h1 a:hover{    
+    text-shadow: 3px 3px 20px #ff309b;
+}
+
+.title {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+}
+
+.title-box-img {
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    border-radius: 16px;
+}
+
+.title-box-name {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: 'Dela Gothic One', sans-serif;
+    border: 1px solid #30A2FF;
+    color: #30A2FF;
+    background-color: #ffffff;
+    border-radius: 16px;
+    position: relative;
+}
+
+.title-box-name:hover{
+    color: #ffffff;
+    background-color: #30A2FF;
+}
+
+#Introduce {
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100vw;
+    background-color: #30A2FF;
+}
+
+#Introduce p {
+    font-size: 48px;
+    font-family: 'DotGothic16', sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.3em;
+}
+
+#gaiden {
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100vw;
+    background-color: #30A2FF;
+}
+
+#gaiden p {
+    font-size: 48px;
+    font-family: 'DotGothic16', sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.3em;
+}
+
+/************ ショートカット ************/
+.slide {
+    display: flex;
+    margin: auto;
+    position: relative;
+    z-index: auto;
+}
+
+.backboard {
+    position: absolute;
+    width: 944px;
+    height: 379px;
+    background: rgba(48, 162, 255, 0.70);
+    border: 2px solid #000;
+    z-index: 0;
+}
+
+.slide-title {
+    position: absolute;
+    width: 670px;
+    height: 75px;
+    color: #000;
+    text-shadow: 0px 2.3px 2.3px rgba(0, 0, 0, 0.25);
+    font-family: 'Aoboshi One', serif;
+    font-size: 60px;
+    font-style: italic;
+    line-height: normal;
+}
+
+.dq2 .slide-title {
+    text-align: right;
+}
+
+.slide-text {
+    position: absolute;
+    color: #000;
+    text-shadow: 0px 3.5px 3.5px rgba(0, 0, 0, 0.25);
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 31px;
+    background: rgba(255, 150, 150, 0.65);
+}
+
+.slide-title .sub {
+    position: absolute;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 42px;
+    top: 77px;
+}
+
+.subtext {
+    position: absolute;
+    width: 40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 40px;
+}
+
+.platform {
+    position: absolute;
+    height: 23px;
+    color: #ffffff;
+    text-shadow: 0.5px 0.5px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    font-size: 20px;
+    font-family: 'DotGothic16', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img[src$="images/FC.jpg"] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+img[src$="images/SFC.jpg"] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+img[src$="images/GB.jpg"] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+img[src$="images/Wii.jpg"] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+img[src$="images/3DS.jpg"] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+img[src$="images/Switch.png"] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+img[src$="images/PlayStation.jpg"] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+img[src$="images/google-play-store.png"] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+img[src$="images/Steam.png"] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.detail {
+    position: absolute;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid#000;
+    color: #000;
+    font-weight: bold;
+    background: #ffffff;
+    text-align: center;
+}
+
+.detail:hover{
+    color: #ffffff;
+    background-color: #000;
+}
+
+.assessment1{
+    height: 100px;
+    background-color: #f5f5f5;
+}
+
+.assessment2{
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.assessment ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.assessment li{
+    list-style: none;
+    margin-left: 30px;
+    font-size: 24px;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+/************ ナンバリングシリーズ ************/
+
+/* DQ1 */
+
+.dq1 {
+    height: 577px;
+    background-color: #f5f5f5;
+}
+
+.dq1 .backboard {
+    top: 82px;
+    left: 234px;
+}
+
+.dq1 img[src$="images/DQ1title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 41px;
+    left: 162px;
+}
+
+.dq1 .slide-title {
+    top: 41px;
+    left: 739px;
+}
+
+.dq1 .slide-text {
+    top: 200px;
+    left: 830px;
+    z-index: 1;
+}
+
+#dq1 img[src$="images/DQ1play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 352px;
+    top: 152px;
+    left: 1070px;
+}
+
+#dq1 img[src$="images/DQ1play2.png"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 824px;
+}
+
+#dq1 .subtext {
+    top: 200px;
+    left: 735px;
+}
+
+#dq1 .platform {
+    top: 372px;
+    left: 247px;
+}
+
+#dq1 img[src$="images/FC.jpg"] {
+    top: 414px;
+    left: 247px;
+}
+
+#dq1 img[src$="images/SFC.jpg"] {
+    top: 414px;
+    left: 304px;
+}
+
+#dq1 img[src$="images/GB.jpg"] {
+    top: 414px;
+    left: 361px;
+}
+
+#dq1 img[src$="images/Wii.jpg"] {
+    top: 414px;
+    left: 418px;
+}
+
+#dq1 img[src$="images/3DS.jpg"] {
+    top: 414px;
+    left: 475px;
+}
+
+#dq1 img[src$="images/Switch.png"] {
+    top: 414px;
+    left: 532px;
+}
+
+#dq1 img[src$="images/PlayStation.jpg"] {
+    top: 414px;
+    left: 589px;
+}
+
+#dq1 img[src$="images/google-play-store.png"] {
+    top: 414px;
+    left: 646px;
+}
+
+.dq1 a {
+    top: 475px;
+    left: 370px;
+}
+
+
+/* DQ2 */
+
+
+.dq2 {
+    height: 631px;
+}
+
+.dq2 .backboard {
+    top: 114px;
+    left: 271px;
+}
+
+.dq2 img[src$="images/DQ2title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 87px;
+    left: 764px;
+}
+
+.dq2 .slide-title {
+    position: absolute;
+    top: 70px;
+    left: 72px;
+}
+
+.dq2 .sub {
+    right: 10px;
+}
+
+.dq2 .slide-text {
+    top: 225px;
+    left: 317px;
+    z-index: 1;
+}
+
+.dq2 img[src$="images/DQ2play1.jfif"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 150px;
+}
+
+.dq2 img[src$="images/DQ2play2.webp"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 396px;
+}
+
+.dq2 .subtext {
+    top: 225px;
+    left: 672px;
+}
+
+.dq2 .platform {
+    top: 409px;
+    left: 764px;
+}
+
+.dq2 a {
+    top: 504px;
+    left: 876px;
+}
+
+#dq2 img[src$="images/FC.jpg"] {
+    top: 445px;
+    left: 764px;
+}
+
+#dq2 img[src$="images/3DS.jpg"] {
+    top: 445px;
+    left: 821px;
+}
+
+#dq2 img[src$="images/Switch.png"] {
+    top: 445px;
+    left: 878px;
+}
+
+#dq2 img[src$="images/PlayStation.jpg"] {
+    top: 445px;
+    left: 935px;
+}
+
+#dq2 img[src$="images/google-play-store.png"] {
+    top: 445px;
+    left: 992px;
+}
+
+
+/* DQ3 */
+
+
+.dq3 {
+    height: 577px;
+    background-color: #f5f5f5;
+}
+
+.dq3 .backboard {
+    top: 82px;
+    left: 234px;
+}
+
+.dq3 img[src$="images/DQ3title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 41px;
+    left: 162px;
+}
+
+.dq3 .slide-title {
+    position: absolute;
+    top: 41px;
+    left: 739px;
+}
+
+.dq3 .sub {
+    left: 0px;
+}
+
+.dq3 .slide-text {
+    top: 200px;
+    left: 830px;
+    z-index: 1;
+}
+
+.dq3 img[src$="images/DQ3play1.webp"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 1070px;
+}
+
+.dq3 img[src$="images/DQ3play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 824px;
+}
+
+.dq3 .subtext {
+    top: 200px;
+    left: 735px;
+}
+
+.dq3 .platform {
+    top: 372px;
+    left: 247px;
+}
+
+#dq3 img[src$="images/FC.jpg"] {
+    top: 414px;
+    left: 247px;
+}
+
+#dq3 img[src$="images/SFC.jpg"] {
+    top: 414px;
+    left: 304px;
+}
+
+#dq3 img[src$="images/GB.jpg"] {
+    top: 414px;
+    left: 361px;
+}
+
+#dq3 img[src$="images/3DS.jpg"] {
+    top: 414px;
+    left: 418px;
+}
+
+#dq3 img[src$="images/Switch.png"] {
+    top: 414px;
+    left: 475px;
+}
+
+#dq3 img[src$="images/PlayStation.jpg"] {
+    top: 414px;
+    left: 532px;
+}
+
+#dq3 img[src$="images/google-play-store.png"] {
+    top: 414px;
+    left: 589px;
+}
+
+.dq3 a {
+    top: 475px;
+    left: 370px;
+}
+
+
+/* DQ4 */
+
+
+.dq2 img[src$="images/DQ4title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 87px;
+    left: 764px;
+}
+
+.dq2 img[src$="images/DQ4play1.png"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 150px;
+}
+
+.dq2 img[src$="images/DQ4play2.png"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 396px;
+}
+
+#dq4 img[src$="images/FC.jpg"] {
+    top: 445px;
+    left: 764px;
+}
+
+#dq4 img[src$="images/3DS.jpg"] {
+    top: 445px;
+    left: 821px;
+}
+
+#dq4 img[src$="images/PlayStation.jpg"] {
+    top: 445px;
+    left: 878px;
+}
+
+#dq4 img[src$="images/google-play-store.png"] {
+    top: 445px;
+    left: 935px;
+}
+
+
+/* DQ5 */
+
+
+#dq5 .dq3{
+    height: 600px;
+}
+
+.dq3 img[src$="images/DQ5title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 41px;
+    left: 162px;
+}
+
+.dq3 img[src$="images/DQ5play1.webp"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 1070px;
+}
+
+.dq3 img[src$="images/DQ5play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 824px;
+}
+
+li span{
+    color: red;
+}
+
+#dq5 img[src$="images/SFC.jpg"] {
+    top: 414px;
+    left: 247px;
+}
+
+#dq5 img[src$="images/3DS.jpg"] {
+    top: 414px;
+    left: 304px;
+}
+
+#dq5 img[src$="images/PlayStation.jpg"] {
+    top: 414px;
+    left: 361px;
+}
+
+#dq5 img[src$="images/google-play-store.png"] {
+    top: 414px;
+    left: 418px;
+}
+
+
+/* DQ6*/
+
+
+.dq2 img[src$="images/DQ6title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 87px;
+    left: 764px;
+}
+
+.dq2 img[src$="images/DQ6play1.webp"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 150px;
+}
+
+.dq2 img[src$="images/DQ6play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 396px;
+}
+
+#dq6 img[src$="images/SFC.jpg"] {
+    top: 445px;
+    left: 764px;
+}
+
+#dq6 img[src$="images/3DS.jpg"] {
+    top: 445px;
+    left: 821px;
+}
+
+#dq6 img[src$="images/google-play-store.png"] {
+    top: 445px;
+    left: 878px;
+}
+
+
+/* DQ7 */
+
+
+.dq3 img[src$="images/DQ7title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 41px;
+    left: 162px;
+}
+
+.dq3 img[src$="images/DQ7play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 1070px;
+}
+
+.dq3 img[src$="images/DQ7play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 824px;
+}
+
+#dq7 img[src$="images/3DS.jpg"] {
+    top: 414px;
+    left: 247px;
+}
+
+#dq7 img[src$="images/PlayStation.jpg"] {
+    top: 414px;
+    left: 304px;
+}
+
+#dq7 img[src$="images/google-play-store.png"] {
+    top: 414px;
+    left: 361px;
+}
+
+#dq7 img[src$="images/Steam.png"] {
+    top: 414px;
+    left: 418px;
+}
+
+
+/* DQ8*/
+
+
+.dq2 img[src$="images/DQ8title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 87px;
+    left: 764px;
+}
+
+.dq2 img[src$="images/DQ8play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 150px;
+}
+
+.dq2 img[src$="images/DQ8play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 396px;
+}
+
+#dq8 img[src$="images/3DS.jpg"] {
+    top: 445px;
+    left: 764px;
+}
+
+#dq8 img[src$="images/PlayStation.jpg"] {
+    top: 445px;
+    left: 821px;
+}
+
+#dq8 img[src$="images/google-play-store.png"] {
+    top: 445px;
+    left: 878px;
+}
+
+
+/* DQ9 */
+
+
+.dq3 img[src$="images/DQ9title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 41px;
+    left: 162px;
+}
+
+.dq3 img[src$="images/DQ9play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 1070px;
+}
+
+.dq3 img[src$="images/DQ9play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 824px;
+}
+
+#dq9 img[src$="images/3DS.jpg"] {
+    top: 414px;
+    left: 247px;
+}
+
+
+/* DQ10*/
+
+
+.dq2 img[src$="images/DQ10title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 87px;
+    left: 764px;
+}
+
+.dq2 img[src$="images/DQ10play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 150px;
+}
+
+.dq2 img[src$="images/DQ10play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 396px;
+}
+
+#dq10 .subtext {
+    font-size: 36px;
+}
+
+#dq10 img[src$="images/Wii.jpg"] {
+    top: 445px;
+    left: 764px;
+}
+
+#dq10 img[src$="images/3DS.jpg"] {
+    top: 445px;
+    left: 821px;
+}
+
+#dq10 img[src$="images/Switch.png"] {
+    top: 445px;
+    left: 878px;
+}
+
+#dq10 img[src$="images/PlayStation.jpg"] {
+    top: 445px;
+    left: 935px;
+}
+
+#dq10 img[src$="images/Steam.png"] {
+    top: 445px;
+    left: 992px;
+}
+
+
+/* DQ11 */
+
+
+.dq3 img[src$="images/DQ11title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 41px;
+    left: 162px;
+}
+
+.dq3 img[src$="images/DQ11play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 1070px;
+}
+
+.dq3 img[src$="images/DQ11play2.webp"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 824px;
+}
+
+#dq11 .subtext {
+    font-size: 32px;
+}
+
+#dq11 li span{
+    color: red;
+}
+
+#dq11 img[src$="images/3DS.jpg"] {
+    top: 414px;
+    left: 247px;
+}
+
+#dq11 img[src$="images/Switch.png"] {
+    top: 414px;
+    left: 304px;
+}
+
+#dq11 img[src$="images/PlayStation.jpg"] {
+    top: 414px;
+    left: 361px;
+}
+
+#dq11 img[src$="images/Steam.png"] {
+    top: 414px;
+    left: 418px;
+}
+
+
+/* DQ12*/
+
+
+#dq12 .dq2{
+    height: 600px;
+}
+
+.dq2 img[src$="images/DQ12title.jpeg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 87px;
+    left: 764px;
+}
+
+.dq2 img[src$="images/DQ12play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 150px;
+}
+
+.dq2 img[src$="images/DQ12chara.png"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 396px;
+}
+
+
+/* 外伝シリーズ */
+/* DQH1 */
+
+
+.dq3 img[src$="images/DQHero1title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 41px;
+    left: 162px;
+}
+
+.dq3 img[src$="images/DQHero1play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 1070px;
+}
+
+.dq3 img[src$="images/DQHero1play2.webp"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 824px;
+}
+
+#dqh1 .slide-title{
+    font-size: 51px;
+}
+
+#dqh1 img[src$="images/Switch.png"] {
+    top: 414px;
+    left: 247px;
+}
+
+#dqh1 img[src$="images/PlayStation.jpg"] {
+    top: 414px;
+    left: 304px;
+}
+
+#dqh1 img[src$="images/Steam.png"] {
+    top: 414px;
+    left: 361px;
+}
+
+
+/* DQH2*/
+
+
+.dq2 img[src$="images/DQHero2title.jpg"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 87px;
+    left: 764px;
+}
+
+.dq2 img[src$="images/DQHero2play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 150px;
+}
+
+.dq2 img[src$="images/DQHero2play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 396px;
+}
+
+#dqh2 .slide-title{
+    font-size: 51px;
+}
+
+#dqh2 li span{
+    color: red;
+}
+
+#dqh2 img[src$="images/Switch.png"]{
+    top: 445px;
+    left: 764px;
+}
+
+#dqh2 img[src$="images/PlayStation.jpg"]{
+    top: 445px;
+    left: 821px;
+}
+
+#dqh2 img[src$="images/Steam.png"]{
+    top: 445px;
+    left: 878px;
+}
+
+
+/* DQB1 */
+
+
+.dq3 img[src$="images/DQB1title.webp"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 41px;
+    left: 162px;
+}
+
+.dq3 img[src$="images/DQB1play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 1070px;
+}
+
+.dq3 img[src$="images/DQB1play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 332px;
+    left: 824px;
+}
+
+#dqb1 .slide-title{
+    font-size: 44px;
+}
+
+#dqb1 img[src$="images/Switch.png"] {
+    top: 414px;
+    left: 247px;
+}
+
+#dqb1 img[src$="images/PlayStation.jpg"] {
+    top: 414px;
+    left: 304px;
+}
+
+#dqb1 img[src$="images/google-play-store.png"] {
+    top: 414px;
+    left: 361px;
+}
+
+#dqb1 img[src$="images/Steam.png"] {
+    top: 414px;
+    left: 418px;
+}
+
+
+/* DQB2*/
+
+
+.dq2 img[src$="images/DQB2title.webp"] {
+    position: absolute;
+    height: 302px;
+    width: 520px;
+    top: 87px;
+    left: 764px;
+}
+
+.dq2 img[src$="images/DQB2play1.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 150px;
+}
+
+.dq2 img[src$="images/DQB2play2.jpg"] {
+    position: absolute;
+    width: 215px;
+    height: 172px;
+    top: 360px;
+    left: 396px;
+}
+
+#dqb2 .slide-title{
+    font-size: 44px;
+}
+
+#dqb2 img[src$="images/Switch.png"]{
+    top: 445px;
+    left: 764px;
+}
+
+#dqb2 img[src$="images/PlayStation.jpg"]{
+    top: 445px;
+    left: 821px;
+}
+
+#dqb2 img[src$="images/Steam.png"]{
+    top: 445px;
+    left: 878px;
+}
+
+
+
+footer {
+    display: flex;
+    margin-top: 60px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #30A2FF;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.1em;
+}
